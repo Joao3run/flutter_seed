@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutter_seed/app/shared/core/core.dart';
+import 'package:flutter_seed/app/core/core.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -8,6 +9,13 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Seed',
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en', ''),
+        const Locale('pt', ''),
+      ],
       theme: ThemeData(
         primaryColor: AppColors.darkRed,
       ),

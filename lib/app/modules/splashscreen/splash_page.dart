@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_seed/app/modules/splashscreen/splash_page_controller.dart';
-import 'package:flutter_seed/app/shared/core/app/app_colors.dart';
+import 'package:flutter_seed/app/core/app/app_colors.dart';
 
 class SplashPage extends StatefulWidget {
   @override
